@@ -1,0 +1,29 @@
+{
+  "name": "docker-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "docker:build": "docker build -t albaalah/simple-docker .",
+    "docker:run": "docker run -p 8080:8080 albaalah/simple-docker"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Albaalah/node-docker-app.git"
+  },
+  "keywords": [
+    "Node",
+    "Docker"
+  ],
+  "author": "Albaalah Waqaar",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/Albaalah/node-docker-app/issues"
+  },
+  "homepage": "https://github.com/Albaalah/node-docker-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
