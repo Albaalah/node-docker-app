@@ -6,8 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "docker:build": "docker build -t albaalah/simple-docker .",
-    "docker:run": "docker run -p 8080:8080 albaalah/simple-docker"
+    "docker:build": "docker build -t albaalah/simple-docker:latest .",
+    "docker:run": "docker run -p 8080:8080 albaalah/simple-docker",
+    "compose:build": "docker-compose up --build",
+    "compose:run": "docker-compose up",
+    "compose:stop": "docker-compose down"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,7 @@
   },
   "homepage": "https://github.com/Albaalah/node-docker-app#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "redis": "^3.0.2"
   }
 }
